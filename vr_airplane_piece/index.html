@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <title>VR DOOR</title>
+</head>
+    <a-scene>
+        <a-entity position="0 1 4.5" id="CameraPosition">
+            <a-entity camera look-controls wasd-controls vr-cursor>
+             <a-entity id="mycursor"
+                       cursor="rayOrigin: mouse"
+                       position="0 0 -3">
+             </a-entity>
+           </a-entity>
+         </a-entity> 
+         
+        <a-entity class="clickable" id="item1" geometry="primitive: box" material="color: #EB0976"
+        position="8 0.6 -0.4" scale="1 1 1" event-set__enter="_event: mouseenter; visible=true" ></a-entity>
+
+        <a-entity class="clickable" id="item2" geometry="primitive: box" material="color: #3D4AFF"
+        position="-8 1.6 -0.4" scale="1 1 1" event-set__enter="_event: mouseenter; visible=true" ></a-entity>
+
+        <a-text value="Sextou" color="#000000" align="center"></a-text>
+
+    </a-scene>
+<body>
+    <script type="text/javascript" src="scripts.js"></script>    
+</body>
+</html>
