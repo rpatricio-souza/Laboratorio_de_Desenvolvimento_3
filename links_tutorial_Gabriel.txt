@@ -1,0 +1,12 @@
+Link Parte I(HTML + JS):
+https://youtu.be/Ccj5BW2y3ME
+
+ 
+
+Link Parte II (HTML +JS +AFRAME):
+https://youtu.be/s4bVuVfHogA
+
+ 
+
+Link do projeto no glitch:
+https://glitch.com/~tutorial-aframe
