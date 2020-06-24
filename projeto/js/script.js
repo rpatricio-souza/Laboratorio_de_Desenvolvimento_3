@@ -43,6 +43,7 @@ document.querySelector("#image1-1").addEventListener("click", function () {
   }
   else{
     el.object3D.visible = true;
+    borda.setAttribute("material", "color: #00ff00; emissive: #00ff00");
     exibeBorda(borda, true);
     if (counter2 == 0 ) {
       count2();
@@ -66,20 +67,25 @@ document.querySelector("#image2-1").addEventListener("click", function () {
     }
   }
   else{
-    exibeBorda(borda, true);
     if (counter2 == 1) {
+      borda.setAttribute("material", "color: #00ff00; emissive: #00ff00");
+      exibeBorda(borda, true);
       el.object3D.visible = true;
       count2();
     }
     if (counter2 > 1) {
+      borda.setAttribute("material", "color: #00ff00; emissive: #00ff00");
+      exibeBorda(borda, true);
       el.object3D.visible = true;
     }
      if (counter2 == 0) {
-      el.object3D.visible = true;
-      setTimeout(function(){
-        exibeBorda(borda, false);
-        el.object3D.visible = false;;
-      }, 900); 
+       el.object3D.visible = true;
+       borda.setAttribute("material", "color: #ff0000; emissive: #ff0000");
+       exibeBorda(borda, true);
+       setTimeout(function(){
+         exibeBorda(borda, false);
+         el.object3D.visible = false;;
+       }, 900); 
     }    
   }
 
@@ -100,18 +106,23 @@ document.querySelector("#image3-1").addEventListener("click", function () {
     }
   }
   else{
-    exibeBorda(borda, true);
-    if (counter2 == 2) { 
+    if (counter2 == 2) {
+      borda.setAttribute("material", "color: #00ff00; emissive: #00ff00");
+      exibeBorda(borda, true);
       el.object3D.visible = true;
       count2();
     }  
     if (counter2 > 2) {
+      borda.setAttribute("material", "color: #00ff00; emissive: #00ff00");
+      exibeBorda(borda, true);
       el.object3D.visible = true;
     }
 
-     if (counter2 < 2) {
+    if (counter2 < 2) {
       el.object3D.visible = true;
-     setTimeout(function(){
+      borda.setAttribute("material", "color: #ff0000; emissive: #ff0000");
+      exibeBorda(borda, true);
+      setTimeout(function(){
           exibeBorda(borda, false);
           el.object3D.visible = false;;
         }, 900); 
@@ -127,9 +138,16 @@ document.querySelector("#image4-1").addEventListener("click", function () {
   var el = document.querySelector("#peca4_4");
   let borda=document.querySelector("#borda4");
   
-  exibeBorda(borda, true);
+  if(borda.object3D.visible==true){
+    exibeBorda(borda, false);
+  }
+  else{
+    exibeBorda(borda, true);
+  }
   
   if (counter2 >= 3 ) {
+    borda.setAttribute("material", "color: #00ff00; emissive: #00ff00");
+    exibeBorda(borda, true);
     el.object3D.visible = true;
     count2();
     console.log(counter2);
@@ -187,6 +205,8 @@ document.querySelector("#image4-1").addEventListener("click", function () {
   }
   else {
     el.object3D.visible = true;
+    borda.setAttribute("material", "color: #ff0000; emissive: #ff0000");
+    exibeBorda(borda, true);
     setTimeout(function(){
         exibeBorda(borda, false);
         el.object3D.visible = false;;
