@@ -18,4 +18,9 @@ O código e o funcionamento do projeto podem ser visualizados através do site "
 
 [Clique aqui](https://codepen.io/rpatricio/pen/gOPWXEJ) para acessá-lo.
 
+
+Preview:
+
+![](preview.gif)
+
 ---
