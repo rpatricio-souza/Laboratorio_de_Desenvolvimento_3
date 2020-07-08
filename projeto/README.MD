@@ -1,2 +1,18 @@
+# PROJETO VR FATEC 2020
 
-[Clique aqui](https://codepen.io/rpatricio/pen/gOPWXEJ) para acessar o CODEPEN.
+---
+
+Integrantes:
+
+- Leonardo Lopes
+
+- Lucas Povinske
+
+- Rafael Patrício
+
+---
+
+O código e o funcionamento do projeto podem ser visualizados através do site "CODEPEN"
+
+[Clique aqui](https://codepen.io/rpatricio/pen/gOPWXEJ) para acessá-lo.
+
